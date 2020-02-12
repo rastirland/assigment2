@@ -1,25 +1,41 @@
 html, body {
-    background-color: #000
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    
 }
 
 .text{
     /* this is the grid layout for my columns on the right hand side*/
     grid-column-start: 1;
     grid-column-end: 2;
-   background-color: #555;
 }
 .text2{
-    /*this is the grid layout for my left hand columns*/
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 .grid-container{
     margin: 2% 1% 0 1%;
     display: block;
-    grid-template-columns:  10% 1fr  ;
+    grid-template-columns:  10% fr;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     
 }
 .nav-wrapper{
     background-color: navy;
+}
+nav{
+    background-color: lightgray;
+ 
+   
+    
+}
+h1{
+    font-size: larger;
+    text-align: center;
 }
