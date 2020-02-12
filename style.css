@@ -1,0 +1,25 @@
+html, body {
+    background-color: #000
+}
+
+.text{
+    /* this is the grid layout for my columns on the right hand side*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+   background-color: #555;
+}
+.text2{
+    /*this is the grid layout for my left hand columns*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: lightgrey;
+}
+.grid-container{
+    margin: 2% 1% 0 1%;
+    display: block;
+    grid-template-columns:  10% 1fr  ;
+    
+}
+.nav-wrapper{
+    background-color: navy;
+}
