@@ -1,6 +1,7 @@
 html, body {
     background-color: #000;
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
     
 }
@@ -97,6 +98,13 @@ text-align: center;
 }
 
 
- 
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+    h1{
+        color: pink;
+    }
+ }
 
 
