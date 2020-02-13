@@ -101,7 +101,7 @@ text-align: center;
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { }
 
-  h1{
+ .h1{
   padding-left: 0%;
   padding-right: 0%;
   color: red;
