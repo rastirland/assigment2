@@ -6,6 +6,12 @@ html, body {
     
 }
 
+.form
+{
+    padding-top: 10%;
+
+}
+
 text{
     /* this is the grid layout for my columns on the right hand side*/
     grid-column-start: 1;
