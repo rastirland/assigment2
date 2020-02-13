@@ -34,7 +34,7 @@ h5{
          this was used to find differnt hr style's,  .hr is a class*/
         border: 0;
         height: 2px;
-        background: linear-gradient(to right, black, grey, lightgrey);
+        background: linear-gradient(to right, lightgray, black, lightgrey);
         width: 100%;
     }
     .ul2
