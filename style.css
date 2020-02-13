@@ -37,8 +37,10 @@ nav{
     
 }
 h1{
-    font-size: larger;
+    font-size: x-large;
     text-align: center;
+    color: rgba(47,86,135,1);
+    font-family: 'Oswald', sans-serif;
 }
 h2{
     font-family: 'Oswald', sans-serif;
@@ -49,8 +51,8 @@ h2{
 
 
 .container {
-    width: 470rem;
-    margin: 2rem 7rem;
+    width: 100%;
+    margin: 2rem 8rem;
 }
 .gallery-item{
     max-width: 100%;
@@ -89,4 +91,13 @@ text-align: center;
 }
 .gallery-item:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 375px){
+    .nav-wrapper{
+        background-color: navy;  
+        display: flex;
+        flex-direction: row;
+    
+    }
 }
