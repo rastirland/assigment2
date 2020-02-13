@@ -18,6 +18,38 @@ text{
     justify-items: center;
     align-items: center;
 }
+h4{
+    font-size: medium;
+    text-align: center;
+}
+h5{
+    text-align: center;
+    color:  	#000;
+/*This is how create the undeline attribute to text, and the font size also changed*/
+    text-decoration: underline;
+    font-size: large;
+}
+    .hr2 {
+        /*Css-tricks.com. (2020). Simple Styles for <hr>'s. [online] Available at: https://css-tricks.com/examples/hrs/ [Accessed 11 Jan. 2020].
+         this was used to find differnt hr style's,  .hr is a class*/
+        border: 0;
+        height: 2px;
+        background: linear-gradient(to right, black, grey, lightgrey);
+        width: 100%;
+    }
+    .ul2
+    /*ul stlye and padding for cv page, this was created so i could make changes without affecting other ul lists
+    the padding was added to fill the page*/
+    {
+    text-align: center;
+    list-style-type: circle;
+    columns: 3;/* this sets the list into a 3 column list*/
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
 .grid-container{
     background-color: lightgray;
     display: flex;
