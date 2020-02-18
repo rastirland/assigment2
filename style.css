@@ -134,15 +134,18 @@ text-align: center;
     height: 335px;
 
 }
+/* media query deisgned for iphone x specifically (this is because i use this phone)*/
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 3)
 {
     h1{
+        /*removing the padding i put on for desktop sites otherwise the text or content will look out of proportion*/
         padding-left: 0%;
         padding-right: 0%;
     }
+    /* this media query is for smaller iphones or mobile phones*/
 }
 @media only screen 
 and (min-device-width : 375px) 
