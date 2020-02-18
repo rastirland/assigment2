@@ -31,7 +31,7 @@ $( document ).ready(() => {
     
   });*/
 
-	var form = document.forms["contact"];
+	let form = document.forms["contact"];
 	form.addEventListener('submit',contact_submit,false);
 
 	function contact_submit(e) {
@@ -54,7 +54,7 @@ $( document ).ready(() => {
 		body += message + "\r\n\r\n";
 		body += "Name: " + name + "\r\n";
 		body += "Phone Number: " + phone + "\r\n";
-
+    body += "thank you for contacting me" + "\r\n";
 		// Build final Mailto URI
 		uri += '?subject=' + encodeURIComponent(subject);
 		uri += '&body=' + encodeURIComponent(body);
