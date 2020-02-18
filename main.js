@@ -51,10 +51,10 @@ $( document ).ready(() => {
 		let message = target.elements['message'].value;
 
 		// Build Body / Message with all Input Fields
-		body += message + "\r\n\r\n";
+		body +="this is sent from my phone" + message + "\r\n\r\n";
 		body += "Name: " + name + "\r\n";
 		body += "Phone Number: " + phone + "\r\n";
-    body += "thank you for contacting me" + "\r\n";
+    
 		// Build final Mailto URI
 		uri += '?subject=' + encodeURIComponent(subject);
 		uri += '&body=' + encodeURIComponent(body);
