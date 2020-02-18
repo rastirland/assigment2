@@ -1,4 +1,5 @@
 html, body {
+    /*the main body styling, also setting the page for the width and height of the screen to keep the design and size consistent*/
     background-color: #000;
     min-height: 100vh;
     min-width: 100%;
@@ -18,6 +19,7 @@ text{
     grid-column-end: 2;
 
 }
+/*Flex used, and content is being positioned center*/
 .text2{
     display: flex;
     flex-direction: column;
@@ -56,21 +58,24 @@ h5{
     padding-right: 5%;
     
 }
+
+/*flex used for layout, and being used as a column style*/
 .grid-container{
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex: 1;
-    
+
+/* This is what sets my nav bar colour*/    
 }
 .nav-wrapper{
     background-color: navy;
 }
-nav{
-    background-color: lightgray;
+/*nav{
+    background-color: lightgray;*/
  
    
-    
+   /*this css is styling my font*/ 
 }
 h1{
     font-size: x-large;
