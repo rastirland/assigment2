@@ -51,7 +51,7 @@ $( document ).ready(() => {
 		let message = target.elements['message'].value;
 
 		// Build Body / Message with all Input Fields
-		body +="this is sent from my phone" + message + "\r\n\r\n";
+		body += message + "tessssssst" + "\r\n\r\n";
 		body += "Name: " + name + "\r\n";
 		body += "Phone Number: " + phone + "\r\n";
     
