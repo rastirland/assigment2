@@ -1,109 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--this is how you link you code to external content, ie fonts, icons and your style sheet-->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Public+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Public+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--this is how you link you code to external content, ie fonts, icons and your style sheet-->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Public+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
 </head>
-<!-- grid container is the class that holds my whole site template in-->
 <body>
 <div class="grid-container">
-    <!-- left and column-->
+  <!-- left and column-->
+  <div class="text">
     <div class="text">
-        
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="http://www.github.com" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
-  <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i>Facebook</a></li>
-  <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i>Instagram</a></li>
-  <!-- Adding more links in this section will enable me to add more to my drop down menu,  
-   also added icons from font awesome to add more professionalism-->
-</ul>
-<nav>
-  <div class="nav-wrapper">
-    <!-- This link class Brand-logo, ia where my name is placed on the nav bar-->
-    <a href="#!" class="brand-logo">James Young</a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Social Media<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
-</nav>
+      <nav>
+        <div class="logo">
+          <h4>James Young</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cv.html">CV</a></li>
+    
+        </ul>
+        <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      </nav>               
+               </div>
 
-
-      <!-- Dropdown Trigger, This is the Sidebar that opens when on a mobile
-      as you can see its set in a Ul/li and has a very similar structure to the man nav bar for navigating in mobile. -->
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="cv.html">CV</a></li>
-  <!--Target blank will load the external links onto a blank page leaving my portfolio open, again icons used from font awesome.-->
-  <li><a href="http://www.github.com" target="_blank"><i class="fab fa-github "></i>GitHub</a><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
-    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram "></i>Instagram</a><a href="https://www.linkedin.com/in/james-young-6bb169196/"> <i class="fab fa-linkedin-in"></i>Linked In</a></li>
-</ul>
-        
-         </div>
-         <!--right hand column-->
-         <div class="text2">
+       <!--right hand column-->
+       <div class="text2">
             
-                <div class="container">
-                              </div>    
-                            <div class="carousel">
-                <a class="carousel-item" href="#one!"><img src="s2.jpg" alt="picture"></a>
-                <a class="carousel-item" href="#two!"><img src="s5.jpg" alt="picture"></a>
-                <a class="carousel-item" href="#three!"><img src="s6.jpg" alt="picture"></a>
-                <a class="carousel-item" href="#four!"><img src="s2.jpg" alt="picture"></a>
-                <a class="carousel-item" href="#five!"><img src="s5.jpg" alt="picture"></a>                  
-                 
-              </div>  
-              <h1>Hi, my name is James. I'm currently studying at Northampton University and hopefully will achieve a
-                Bachelor's Degree in computer science, by the year 2021. My family are my world, as well as studying im a trained security officer. Here is a few pictures of me whilst at work <a href="#" data-target="slide-out" class="sidenav-trigger">Press Me</a> .</h1>
-               
-                <ul id="slide-out" class="sidenav">
-                  <li><div class="user-view">
-                    <div class="background">
-                  
-                    </div>
-                    <a href="#user"><img class="circle" src="me.jpg" alt="profile pic"></a>
-                    <a href="#name"><span class="white-text name"></span>James Stephen Young</a>
-                    <a href="#email"><span class="white-text email"></span>rastirland@hotmail.com</a>
-                  </div></li>
-                  <li><a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i>Facebook</a></li>
-                  <li><a href="https://www.linkedin.com/in/james-young-6bb169196/"> <i class="fab fa-linkedin-in fa-2x"></i>Linked in</a></li>
-                  <li><div class="divider"></div></li>
-                  <h2>Please take the time to have a look around my portfolio website.
-                       you have access to contact me via the contact section, or by my social media links. 
-                       My CV will be attached to this site so if you would like to work with me, for future projects please Contact me.
-                       I will reply as soon as possible.</h2>
-                  <li><div class="divider"></div></li>
-                </ul>
-                        
- 
+        <div class="container">
+                      </div>    
+                    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="s2.jpg" alt="picture"></a>
+        <a class="carousel-item" href="#two!"><img src="s5.jpg" alt="picture"></a>
+        <a class="carousel-item" href="#three!"><img src="s6.jpg" alt="picture"></a>
+        <a class="carousel-item" href="#four!"><img src="s2.jpg" alt="picture"></a>
+        <a class="carousel-item" href="#five!"><img src="s5.jpg" alt="picture"></a>                  
          
-                         <footer></footer>   
-                            </div>
+      </div>  
+      <h1>Hi, my name is James. I'm currently studying at Northampton University and hopefully will achieve a
+        Bachelor's Degree in computer science, by the year 2021. My family are my world, as well as studying im a trained security officer. Here is a few pictures of me whilst at work <a href="#" data-target="slide-out" class="sidenav-trigger">Press Me</a> .</h1>
+       
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view">
+            <div class="background">
+          
             </div>
-        <script
-			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-			  crossorigin="anonymous"></script>  
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <!-- This links to my java script file-->
-            <script src="main.js" async></script> 
-</body>
-</html>
+            <a href="#user"><img class="circle" src="me.jpg" alt="profile pic"></a>
+            <a href="#name"><span class="white-text name"></span>James Stephen Young</a>
+            <a href="#email"><span class="white-text email"></span>rastirland@hotmail.com</a>
+          </div></li>
+          <li><a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i>Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/james-young-6bb169196/"> <i class="fab fa-linkedin-in fa-2x"></i>Linked in</a></li>
+          <li><div class="divider"></div></li>
+          <h2>Please take the time to have a look around my portfolio website.
+               you have access to contact me via the contact section, or by my social media links. 
+               My CV will be attached to this site so if you would like to work with me, for future projects please Contact me.
+               I will reply as soon as possible.</h2>
+          <li><div class="divider"></div></li>
+        </ul>
+                
+
+ 
+                 <footer></footer>   
+                    </div>
+    </div>
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- This links to my java script file-->
+    <script src="main.js" async></script> 

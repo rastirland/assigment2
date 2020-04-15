@@ -7,11 +7,7 @@ html, body {
     
 }
 
-.form
-{
-    padding-top: 10%;
 
-}
 
 text{
     /* this is the grid layout for my columns on the right hand side*/
@@ -84,6 +80,7 @@ h1{
     font-family: 'Oswald', sans-serif;
     padding-left: 30%;
     padding-right: 30%;
+
 }
 h2{
     font-family: 'Oswald', sans-serif;
@@ -137,28 +134,116 @@ text-align: center;
 }
 .carousel{
     height: 335px;
-
-
-
-    
 }
-/* media query deisgned for iphone x specifically (this is because i use this phone)*/
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-{
-    h1{
-        /*removing the padding i put on for desktop sites otherwise the text or content will look out of proportion*/
-        padding-left: 0%;
-        padding-right: 0%;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: navy;
+        font-family: 'oswald', sans-serif;
+        
+        
     }
-    /* this media query is for smaller iphones or mobile phones*/
-}
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {     
-    h1{
-    padding-left: 0%;
-    padding-right: 0%;
-}}
+    .logo
+    {
+        color: rgb(226,226,226);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    
+    }
+    .nav-links li{
+        list-style: none;
+    }
+    .nav-links a{
+        display: flex;
+        color: rgb(226,226,226);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+    
+    }
+    .burger{
+        display: none;
+    }
+    .burger div{
+    background-color: rgb(226,226,226);
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    /* this makes the animation for the nav bar run smoother*/
+    transition: all 0.3s ease;
+    }
+    @media screen and (max-width:1024px){
+        .nav-links{
+            width: 60%;
+    }
+    }
+    @media screen and (max-width:768px){
+        body{
+            overflow-X: hidden;}
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: navy;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+        }
+        .nav-links li{
+            opacity: 0;
+        }
+        .burger{
+        display: block;
+        cursor: pointer;
+        }
+        .nav-active{
+            transform: translateX(0%);
+        }
+        @keyframes navLinkFade {
+            from{
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+            
+        }
+    
+        .toggle .line1{
+            /* this create part of the X transisiton,  changing the numbers wll move the line location*/ 
+            transform: rotate(-45deg) translate(-5px,6px);
+        }
+        .toggle .line2
+        {
+            opacity: 0;
+        }
+        .toggle .line3{
+        /* this create part of the X transisiton,  changing the numbers wll move the line location*/
+            transform: rotate(45deg) translate(-5px,-6px);
+    
+        }
+        }
+        
+    
+    
+    
+    
