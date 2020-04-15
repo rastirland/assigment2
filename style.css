@@ -194,6 +194,9 @@ text-align: center;
     @media screen and (max-width:768px){
         body{
             overflow-X: hidden;}
+            .gallery{
+                z-index: 0;
+            }
     
             .carousel{
                 
