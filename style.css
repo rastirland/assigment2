@@ -6,6 +6,13 @@ html, body {
     display: flex;
     
 }
+/* This changes the style of the selected image class */
+.socialimg {
+    height: 35px;
+}
+pre{
+    font-size: 8;
+}
 .menu-ctn > li {
     display: inline-block;
     background-color: navy;
