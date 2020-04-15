@@ -6,7 +6,32 @@ html, body {
     display: flex;
     
 }
-
+.menu-ctn > li {
+    display: inline-block;
+    background-color: navy;
+    
+    transition: all 0.8s ease;
+    position: relative;
+  
+}
+.menu-ctn li:hover{
+    cursor: pointer;
+    background-color: #039be5;
+}
+#dropdown{
+    display: none; 
+    position: absolute;
+    width: 100%;
+    background-color: #039be5;
+    z-index: 1;
+    text-align: centre;
+    left: 0;
+    top: 100%;
+}
+#dropdown.active{
+    display: block;
+  
+}
 
 
 text{
