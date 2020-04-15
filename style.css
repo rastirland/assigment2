@@ -27,6 +27,7 @@ html, body {
     text-align: centre;
     left: 0;
     top: 100%;
+    transition: all 0.3s ease;
 }
 #dropdown.active{
     display: block;
