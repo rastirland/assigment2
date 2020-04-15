@@ -7,8 +7,15 @@ html, body {
     
 }
 /* This changes the style of the selected image class */
+.circle{
+    height: 35px;
+    opacity: 100;
+    cursor: pointer;
+    
+}
 .socialimg {
     height: 35px;
+    cursor: pointer;
 }
 pre{
     font-size: 8;
@@ -16,6 +23,7 @@ pre{
 .menu-ctn > li {
     display: inline-block;
     background-color: navy;
+    cursor: pointer;
     
     transition: all 0.8s ease;
     position: relative;
