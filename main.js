@@ -33,13 +33,15 @@ function validation(){
     return true;
     }
 };
-    function modalContacts(){
-        document.querySelector('.bg-modal').style.display= 'flex';
-    };
+
+const email = document.getElementById("mail");
+
+let form = document.forms["contact"];
+form.addEventListener('submit',contact_submit,false);
 
 function check(){
     if (validation() == true){
-        modalContacts();
+      
         
      }
     };
@@ -128,17 +130,4 @@ $( document ).ready(() => {
     });
   });
 
-  const email = document.getElementById("mail");
-
-  /*email.addEventListener("input", function (event) {
-    if (email.validity.typeMismatch) {
-      email.setCustomValidity("I am expecting an e-mail address!");
-    } else {
-      email.setCustomValidity("");
-    }
-    
-  });*/
-
-	let form = document.forms["contact"];
-	form.addEventListener('submit',contact_submit,false);
 
