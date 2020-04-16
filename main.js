@@ -34,14 +34,9 @@ function validation(){
     }
 };
 
-const email = document.getElementById("mail");
-
-let form = document.forms["contact"];
-form.addEventListener('submit',contact_submit,false);
 
 function check(){
     if (validation() == true){
-      
         
      }
     };
@@ -130,4 +125,8 @@ $( document ).ready(() => {
     });
   });
 
+  const email = document.getElementById("mail");
+
+	let form = document.forms["contact"];
+	form.addEventListener('submit',contact_submit,false);
 
