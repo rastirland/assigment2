@@ -53,15 +53,15 @@
 
          <!--right hand column-->
          <div class="text2">
-         <form name="contact" method="post">
+         <form name="contact" method="mail" onsubmit= check()>
 	<label>Name</label>
-	<input type="text" name="name" />
+	<input type="text" class="name" name="name"/>
 	<label>Subject</label>
-	<input type="text" name="subject" />
+	<input type="text"class="subject" name="subject" />
 	<label>Phone Number</label>
-	<input type="text" name="phone" />
+	<input type="text" class="phone" name="phone"/>
 	<label>Message</label>
-	<textarea name="message"></textarea>
+	<textarea class="message" name="message"></textarea>
 
 	<input type="submit" name="send" value="Send Message" />
 </form>
