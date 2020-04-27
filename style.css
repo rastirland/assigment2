@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     /*the main body styling, also setting the page for the width and height of the screen to keep the design and size consistent*/
     background-color: #000;
     min-height: 100vh;
@@ -6,35 +7,41 @@ html, body {
     display: flex;
 
 }
+
 /* This changes the style of the selected image class */
-.circle{
+.circle {
     height: 35px;
     opacity: 100;
     cursor: pointer;
-    
+
 }
+
 .socialimg {
     height: 35px;
     cursor: pointer;
 }
-pre{
+
+pre {
     font-size: 8;
 }
-.menu-ctn > li {
+
+.menu-ctn>li {
     display: inline-block;
     background-color: navy;
     cursor: pointer;
-    
+
     transition: all 0.8s ease;
     position: relative;
-  
+
 }
-.menu-ctn li:hover{
+
+.menu-ctn li:hover {
     cursor: pointer;
     background-color: #039be5;
 }
-#dropdown{
-    display: none; 
+
+#dropdown {
+    display: none;
     position: absolute;
     width: 100%;
     background-color: #039be5;
@@ -44,88 +51,99 @@ pre{
     top: 100%;
     transition: all 0.3s ease;
 }
-#dropdown.active{
+
+#dropdown.active {
     display: block;
-  
+
 }
 
 
-text{
+text {
     /* this is the grid layout for my columns on the right hand side*/
     grid-column-start: 1;
     grid-column-end: 2;
 
 }
+
 /*Flex used, and content is being positioned center*/
-.text2{
+.text2 {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
-h4{
+
+h4 {
     font-size: medium;
     text-align: center;
 }
-h5{
+
+h5 {
     text-align: center;
-    color:  	#000;
-/*This is how create the undeline attribute to text, and the font size also changed*/
+    color: #000;
+    /*This is how create the undeline attribute to text, and the font size also changed*/
     text-decoration: underline;
     font-size: large;
 }
-    .hr2 {
-        /*Css-tricks.com. (2020). Simple Styles for <hr>'s. [online] Available at: https://css-tricks.com/examples/hrs/ [Accessed 11 Jan. 2020].
+
+.hr2 {
+    /*Css-tricks.com. (2020). Simple Styles for <hr>'s. [online] Available at: https://css-tricks.com/examples/hrs/ [Accessed 11 Jan. 2020].
          this was used to find differnt hr style's,  .hr is a class*/
-        border: 0;
-        height: 2px;
-        background: linear-gradient(to right, lightgray, black, lightgrey);
-        width: 100%;
-    }
-    .ul2
-    /*ul stlye and padding for cv page, this was created so i could make changes without affecting other ul lists
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, lightgray, black, lightgrey);
+    width: 100%;
+}
+
+.ul2
+
+/*ul stlye and padding for cv page, this was created so i could make changes without affecting other ul lists
     the padding was added to fill the page*/
     {
     text-align: center;
     list-style-type: circle;
-    columns: 3;/* this sets the list into a 3 column list*/
+    columns: 3;
+    /* this sets the list into a 3 column list*/
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     padding-left: 5%;
     padding-right: 5%;
-    
+
 }
 
 /*flex used for layout, and being used as a column style*/
-.grid-container{
+.grid-container {
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex: 1;
 
-/* This is what sets my nav bar colour*/    
+    /* This is what sets my nav bar colour*/
 }
-.nav-wrapper{
+
+.nav-wrapper {
     background-color: navy;
 }
+
 /*nav{
     background-color: lightgray;
 } */
 
 
-/*this css is styling my font*/ 
-h1{
+/*this css is styling my font*/
+h1 {
     font-size: x-large;
     text-align: center;
-    color: rgba(47,86,135,1);
+    color: rgba(47, 86, 135, 1);
     font-family: 'Oswald', sans-serif;
     padding-left: 30%;
     padding-right: 30%;
 
 }
-h2{
+
+h2 {
     font-family: 'Oswald', sans-serif;
-    color: rgba(47,86,135,1);
+    color: rgba(47, 86, 135, 1);
     text-align: center;
     font-size: medium;
 }
@@ -133,167 +151,187 @@ h2{
 
 .container {
     width: 100%;
-    
+
 }
-.gallery-item{
+
+.gallery-item {
     max-width: 100%;
     border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: all .3s;
     overflow: hidden;
     position: relative;
 }
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1.5rem;
     grid-auto-rows: minmax (150px, auto);
 }
-.image{
+
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    transition:.5s ease;
+    transition: .5s ease;
     backface-visibility: hidden;
     object-fit: cover;
 }
-.middle{
-transition: .5s ease;
-opacity: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.gallery-item:hover .image
-{filter: grayscale(1);
+
+.gallery-item:hover .image {
+    filter: grayscale(1);
 }
-.gallery-item:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+
+.gallery-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
-.carousel{
+
+.carousel {
     height: 335px;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 8vh;
-        background-color: navy;
-        font-family: 'oswald', sans-serif;
-        
-        
-    }
-    .logo
-    {
-        color: rgb(226,226,226);
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-size: 20px;
-    }
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
-    
-    }
-    .nav-links li{
-        list-style: none;
-    }
-    .nav-links a{
-        display: flex;
-        color: rgb(226,226,226);
-        text-decoration: none;
-        letter-spacing: 3px;
-        font-weight: bold;
-        font-size: 14px;
-    
-    }
-    .burger{
-        display: none;
-    }
-    .burger div{
-    background-color: rgb(226,226,226);
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: navy;
+    font-family: 'oswald', sans-serif;
+
+
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: flex;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: rgb(226, 226, 226);
     height: 3px;
     width: 25px;
     margin: 5px;
     /* this makes the animation for the nav bar run smoother*/
     transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
     }
-    @media screen and (max-width:1024px){
-        .nav-links{
-            width: 60%;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-X: hidden;
     }
+
+    .gallery {
+        z-index: 0;
     }
-    @media screen and (max-width:768px){
-        body{
-            overflow-X: hidden;}
-            .gallery{
-                z-index: 0;
-            }
-    
-            .carousel{
-                
-                z-index: 0;
-            }
-        .nav-links{
-            position: absolute;
-            right: 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color: navy;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-            transform: translateX(100%);
-            z-index: 1;
-        }
-        .nav-links li{
-            opacity: 0;
-        }
-        .burger{
+
+    .carousel {
+
+        z-index: 0;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: navy;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
         display: block;
         cursor: pointer;
-        }
-        .nav-active{
-            transform: translateX(0%);
-        }
-        @keyframes navLinkFade {
-            from{
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to{
-                opacity: 1;
-                transform: translateX(0px);
-            }
-            
-        }
-    
-        .toggle .line1{
-            /* this create part of the X transisiton,  changing the numbers wll move the line location*/ 
-            transform: rotate(-45deg) translate(-5px,6px);
-        }
-        .toggle .line2
-        {
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
             opacity: 0;
+            transform: translateX(50px);
         }
-        .toggle .line3{
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+    }
+
+    .toggle .line1 {
         /* this create part of the X transisiton,  changing the numbers wll move the line location*/
-            transform: rotate(45deg) translate(-5px,-6px);
-    
-        }
-        }
-        
-    
-    
-    
-    
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        /* this create part of the X transisiton,  changing the numbers wll move the line location*/
+        transform: rotate(45deg) translate(-5px, -6px);
+
+    }
+}
