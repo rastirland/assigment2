@@ -24,7 +24,7 @@ body {
 pre {
     font-size: 8;
 }
-
+/* menu li styles */
 .menu-ctn>li {
     display: inline-block;
     background-color: navy;
@@ -34,12 +34,12 @@ pre {
     position: relative;
 
 }
-
+/* hoover over menu styles */
 .menu-ctn li:hover {
     cursor: pointer;
     background-color: #039be5;
 }
-
+/* drop down menu styles  */
 #dropdown {
     display: none;
     position: absolute;
@@ -207,7 +207,7 @@ h2 {
     padding: 0px;
     box-sizing: border-box;
 }
-
+/* nav styles and layout  */
 nav {
     display: flex;
     justify-content: space-around;
@@ -218,7 +218,7 @@ nav {
 
 
 }
-
+/* logo spacing ie makes spaces between letters and styles */
 .logo {
     color: rgb(226, 226, 226);
     text-transform: uppercase;
@@ -259,7 +259,7 @@ nav {
     /* this makes the animation for the nav bar run smoother*/
     transition: all 0.3s ease;
 }
-
+/* mobile or smaller screen styles */
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 60%;
